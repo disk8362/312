@@ -10,21 +10,16 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @jakarta.persistence.Id
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "surname", nullable = false)
     private String surname;
 
-    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "age", nullable = false)
     private int age;
 
     public User() {
